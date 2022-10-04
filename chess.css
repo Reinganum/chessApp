@@ -1,0 +1,103 @@
+
+#displayTurn{
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#boardContainer{
+    display: grid;
+    grid-template-columns: repeat(8,50px);
+    grid-template-rows: repeat(8,50px);
+}
+
+#notationContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: red;
+    height: 400px;
+    border-radius: 24px;
+    margin-left: 50px;
+}
+#notationTitle{
+    padding-inline: 10px;
+    text-align: center;
+}
+#notation{
+    height: 350px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(2,100px);
+    grid-auto-rows: 40px;
+    overflow-y: auto;
+}
+.black{
+    background-color: rgb(5, 49, 5);
+}
+
+.black:hover{
+    background-color: rgb(158, 154, 154);
+}
+.moveCode{
+    color: black;
+
+}
+.white{
+    background-color: rgb(255, 254, 254);
+}
+
+.white:hover{
+    background-color: rgb(158, 154, 154);
+}
+
+.w{
+    display:inline-block;
+    width: 100%;
+    color: rgb(242, 215, 8);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.b{
+    display:inline-block;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+h1{
+    color:white;
+}
+.square:hover>.b{
+    font-size: 36px;
+    color: grey;
+}
+
+.square:hover>.w{
+    font-size: 36px;
+    color: rgb(231, 110, 17);
+}
+
+.attacked{
+    border-style:dashed;
+    border-width: 5px;
+    border-color: red;
+}
+#analysis{
+    width: 680px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 50px;
+}
